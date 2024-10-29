@@ -1,0 +1,118 @@
+/* Reset de estilos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Modo oscuro base */
+body {
+  background-color: #101820; /* Azul oscuro profundo */
+  color: #d6e4e5; /* Gris claro azulado */
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor */
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 1.5em;
+  text-align: center;
+  background-color: #1c2833; /* Azul oscuro */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+  color: #ffffff;
+  margin-bottom: 1em;
+  font-size: 1.8em;
+}
+
+h4 {
+  color: #ffffff;
+  margin-top: 1.5em;
+  font-size: 1.2em;
+}
+
+/* Formulario */
+.form input[type="text"] {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #2a3b4c; /* Azul grisáceo */
+  border-radius: 5px;
+  background-color: #2a3b4c; /* Azul grisáceo oscuro */
+  color: #d6e4e5;
+  font-size: 1em;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form input[type="text"]::placeholder {
+  color: #a0b1b4; /* Azul claro apagado */
+}
+
+.form input[type="text"]:focus {
+  border-color: #4ea4e6; /* Azul brillante */
+  background-color: #364f6b; /* Azul más oscuro */
+  outline: none;
+}
+
+/* Diseño de dos columnas para .form-row */
+.form-row {
+  display: flex;
+  gap: 1em;
+}
+
+.form-row input[type="text"] {
+  width: 100%;
+}
+
+/* Botón de Envío */
+.submit-button {
+  width: 100%;
+  padding: 0.8em;
+  background-color: #4ea4e6; /* Azul vibrante */
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #3a90c4; /* Azul más oscuro en hover */
+  transform: scale(1.02);
+}
+
+.submit-button:active {
+  transform: scale(0.98);
+}
+
+/* Enlaces */
+.links {
+  margin-top: 1em;
+  text-align: left;
+}
+
+.links a {
+  display: block;
+  color: #4ea4e6; /* Azul brillante */
+  text-decoration: none;
+  margin-bottom: 0.5em;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #3a90c4; /* Azul más oscuro */
+}

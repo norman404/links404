@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+      <form action="/add" method="post" class="form">
+        <input 
+          type="text" 
+          name="href" 
+          placeholder="Shorten your link" 
+          required 
+          pattern="https?://.+" 
+          title="Please enter a valid URL starting with http:// or https://"
+        />
+        <div class="form-row">
+          <input 
+            type="text" 
+            name="hash" 
+            placeholder="Hash to use for the link" 
+            required 
+            minlength="3" 
+            title="Please enter at least 3 characters"
+          />
+          <input 
+            type="text" 
+            name="code" 
+            placeholder="Auth Code" 
+            required 
+            minlength="5" 
+            maxlength="10" 
+            title="Code should be between 5 and 10 characters"
+          />
+        </div>
+        <input type="submit" value="Add" class="submit-button" />
+      </form>
+      <h4>Already used URLs</h4>
+      <div class="links">
+        <% for(var i=0; i < links.length; i++) { %>
+          <a href="<%= links[i].hash %>"><%= links[i].hash %></a>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>
