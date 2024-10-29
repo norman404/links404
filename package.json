@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "DEBUG=links404:* node --watch ./bin/www"
+    "dev": "DEBUG=links404:* node --watch ./bin/www",
+    "start":"node ./bin/www"
   },
   "dependencies": {
     "@libsql/client": "^0.14.0",
