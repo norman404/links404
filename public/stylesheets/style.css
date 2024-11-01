@@ -17,6 +17,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
+  padding: 1em; /* Espacio para pantallas pequeñas */
 }
 
 /* Contenedor */
@@ -115,4 +116,29 @@ h4 {
 
 .links a:hover {
   color: #3a90c4; /* Azul más oscuro */
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start; /* Desactiva centrado en dispositivos móviles */
+  }
+  /* Ajustar el contenedor para dispositivos pequeños */
+  .container {
+    padding: 1em;
+  }
+  
+  /* Hacer el diseño de la fila del formulario en una sola columna */
+  .form-row {
+    flex-direction: column;
+  }
+  
+  /* Ajustar el tamaño del texto del título */
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h4 {
+    font-size: 1em;
+  }
 }
