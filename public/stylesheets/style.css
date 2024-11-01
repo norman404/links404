@@ -26,9 +26,6 @@ body {
   width: 100%;
   padding: 1.5em;
   text-align: center;
-  background-color: #1c2833; /* Azul oscuro */
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Título */
