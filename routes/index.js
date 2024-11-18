@@ -13,6 +13,10 @@ router.get('/', async function(req, res, next) {
   res.render('index', { title: 'Your URL shortener 🔗', links })
 })
 
+router.get('/ping', async function(req, res, next) {
+  res.send('pong')
+})
+
 router.post('/add', async function(req, res, next) {
   const { href, hash, code } = req.body
   if (code !== '12345') {
